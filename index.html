@@ -352,8 +352,15 @@
                         </li>
                     </ul>
                     </div>
+                    <div class="subscribe-container">
+                        <p class="subscribe-text">Subscribe</p>
+                        <form class="subscribe-field"></form>
+                        <input class="subscribe-input" type="email" name="email" placeholder="Email">
+                        <button type="submit" class="subscribe-submit">Subscribe</button>
+                    </div>
                     
                 </div>
+                
                     
             </footer>
 
@@ -361,36 +368,39 @@
                 <div class="modal-content">
                     <h2 class="user-details-heading">Leave your contacts and we will call you back</h2>
                     
-                    <form class="user-details">
+                    <form class="user-details" for="full-name"> 
                         <label class="user-details-field">
                             <span class="user-details-label">Name</span>
-                            <input type="text" name="full-name">
-                            <svg class="user-details-field-icon">
+                            <input class="field-input" type="text" name="full-name">
+                            <svg class="user-details-field-icon" width="18" height="18">
                                 <use href="images/icons.svg#name-icon" ></use>
                             </svg>
                         </label>
-                        <label class="user-details-field">
+                        <label class="user-details-field" for="phone">
                             <span class="user-details-label">Phone</span>
-                            <input type="tel" name="phone">
-                            <svg class="user-details-field-icon">
+                            <input class="field-input" type="tel" name="phone">
+                            <svg class="user-details-field-icon" width="18" height="18">
                                 <use href="images/icons.svg#phone-icon" ></use>
                             </svg>
                         </label>
-                        <label class="user-details-field">
+                        <label class="user-details-field" for="email">
                             <span class="user-details-label">
                                 Email
                             </span>
-                            <input type="email" name="email">
-                            <svg class="user-details-field-icon">
+                            <input class="field-input" type="email" name="email">
+                            <svg class="user-details-field-icon" width="18" height="18">
                                 <use href="images/icons.svg#email-icon" ></use>
                             </svg>
                         </label>
                         <label class="user-details-field user-details-comments">
                             <span class="user-details-label">Comments</span>
-                            <textarea name="commnets" rows="5" placeholder="Text input"></textarea>
+                            <textarea class="comment-input" name="commnets" rows="5" placeholder="Text input"></textarea>
                         </label>
                         <label class="user-details-checkbox user-details-field">
                             <input type="checkbox" name="agree">
+                            <svg class="user-details-field-check">
+                                <use href="images/icons.svg#check-icon" ></use>
+                            </svg>
                             I accept the terms and conditions of the Privacy Policy
                         </label>
 
