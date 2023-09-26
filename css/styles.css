@@ -82,6 +82,7 @@ address {
   margin: 0 auto;
   padding: 0 15px;
   text-align: center;
+  white-space: nowrap;
 }
 
 .main-header-container {
@@ -577,6 +578,7 @@ address {
   line-height: 1.5em;
   letter-spacing: 0.32px;
   color: var(--cloud);
+  justify-content: left;
 }
 
 .cloud {
@@ -607,6 +609,7 @@ address {
   background-color: var(--navy-blue);
   text-align: left;
   display: flex;
+  white-space: nowrap;
 }
 
 .logo-text-container {
@@ -854,6 +857,18 @@ fill: var(--cloud);
   font-size: 12px;
   line-height: 1.17em; 
   letter-spacing: 0.48px;
+  margin-left: 8px;
+  font-family: inherit;
+}
+
+.privacy-policy {
+  color: var(--iris);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-decoration-line: underline;
+  font-family: inherit;
+
 }
 
 .user-details-field-check{
@@ -878,7 +893,6 @@ fill: var(--cloud);
   padding: 0;
   opacity: 0;
   overflow: hidden;
-
 }
 
 
@@ -918,6 +932,8 @@ fill: var(--cloud);
   margin-left: auto;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 169px;
+  height: 56px;
 }
 
 .user-details-field-icon {
@@ -933,6 +949,17 @@ fill: var(--cloud);
 .subscribe-container {
   display: block;
   margin-left: 80px;
+  width: auto;
+  white-space: nowrap;
+}
+
+
+.subscribe-text {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.32px;
 }
 
 .subscribe-input {
@@ -943,6 +970,10 @@ fill: var(--cloud);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
   background: transparent;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 2em;
+  letter-spacing: 0.48px;
 }
 
 .subscribe-submit {
@@ -955,4 +986,18 @@ fill: var(--cloud);
   background: var(--iris); 
   color: var(--white);
   margin-left: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.64px;    
+  font-weight: 500;
+}
+
+.subscribe-submit svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--white);
 }
