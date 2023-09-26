@@ -371,14 +371,14 @@
                     <form class="user-details" for="full-name"> 
                         <label class="user-details-field">
                             <span class="user-details-label">Name</span>
-                            <input class="field-input" type="text" name="full-name">
+                            <input class="field-input" type="text" name="full-name" required>
                             <svg class="user-details-field-icon" width="18" height="18">
                                 <use href="images/icons.svg#name-icon" ></use>
                             </svg>
                         </label>
                         <label class="user-details-field" for="phone">
                             <span class="user-details-label">Phone</span>
-                            <input class="field-input" type="tel" name="phone">
+                            <input class="field-input" type="tel" name="phone" required>
                             <svg class="user-details-field-icon" width="18" height="18">
                                 <use href="images/icons.svg#phone-icon" ></use>
                             </svg>
@@ -387,7 +387,7 @@
                             <span class="user-details-label">
                                 Email
                             </span>
-                            <input class="field-input" type="email" name="email">
+                            <input class="field-input" type="email" name="email" required>
                             <svg class="user-details-field-icon" width="18" height="18">
                                 <use href="images/icons.svg#email-icon" ></use>
                             </svg>
@@ -397,11 +397,14 @@
                             <textarea class="comment-input" name="commnets" rows="5" placeholder="Text input"></textarea>
                         </label>
                         <label class="user-details-checkbox user-details-field">
-                            <input type="checkbox" name="agree">
+                            <input type="checkbox" name="agree" class="checkbox-input" required visually-hidden>
                             <svg class="user-details-field-check">
                                 <use href="images/icons.svg#check-icon" ></use>
                             </svg>
-                            I accept the terms and conditions of the Privacy Policy
+                            <span class="checkbox-text">
+                                I accept the terms and conditions of the Privacy Policy
+                            </span>
+                            
                         </label>
 
                         <button type="submit" class=user-details-submit>Send</button>
