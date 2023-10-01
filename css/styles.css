@@ -918,7 +918,7 @@ fill: var(--cloud);
   border-color: var(--ocean);
 }
 
-.user-details-submit:hover {
+.user-details-submit:hover, .subscribe-submit:hover {
   background-color: var(--ocean);
 }
 
@@ -958,6 +958,7 @@ fill: var(--cloud);
   top: 60px;
   transform: translateY(-50px);
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-container {
@@ -988,6 +989,7 @@ fill: var(--cloud);
   font-size: 12px;
   line-height: 2em;
   letter-spacing: 0.48px;
+  color: var(--white);
 }
 
 .subscribe-submit {
@@ -1008,6 +1010,8 @@ fill: var(--cloud);
   line-height: 1.5em;
   letter-spacing: 0.64px;    
   font-weight: 500;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .subscribe-submit svg {
